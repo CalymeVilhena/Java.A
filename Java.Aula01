@@ -1,0 +1,27 @@
+public class Aula01 {
+
+    public static void main (String args[]){
+
+        String nome = "Calyme";
+        double peso = 48.5;
+        double altura = 1.65;
+
+        double imc = peso/(altura * altura);
+
+        System.out.println("CALCULADORA DE IMC");
+        System.out.println("Nome:"+nome);
+        System.out.printf("IMC: %.2f",imc);
+
+        String classificacao;
+            if(imc<18.5){
+                classificacao =" magreza";
+
+            }else if(imc >= 18.5 && imc < 25){
+                classificacao = "normal";
+            }else{
+                classificacao = "obesidade e sobrepeso";
+            }
+            System.out.println ("\nclassificacao:"+classificacao);
+    }
+}
+
